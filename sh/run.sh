@@ -36,8 +36,8 @@ if [ -z "$WALLET" ] || [ -z "$POOL" ]; then
     exit 1
 fi
 
-echo "✅ Pool: $POOL"
-echo "✅ Wallet: $WALLET"
+echo "✅ Pool"
+echo "✅ Wallet"
 
 # --- Generate password hashes ---
 USER_HASH=$(echo "$USER_PASS" | openssl passwd -6 -stdin)
